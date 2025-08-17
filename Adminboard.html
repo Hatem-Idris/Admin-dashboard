@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adminboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="p-4">
+  <div class="container">
+    <h1 class="mb-4">Welcome Admin--Controlboard</h1>
+    <button class="btn btn-primary mb-4" onclick="togglemodal()">+ Add New Phone</button>
+
+    <div id="productsDiv" class="row g-3"></div>
+    <button id="cashierpage" onclick="goback()" class="container col-12 mt-5 btn btn-success align-self-center">Go back to cashier page</button>
+  </div>
+
+  <!-- Modal -->
+  <div class="mymodal d-none justify-content-center align-items-center"
+    style="width:100%;height:100vh;position:fixed;top:0;left:0;background:rgba(0,0,0,0.6);">
+    <div class="col-5 bg-white rounded shadow p-4 d-flex flex-column gap-3">
+      <button onclick="closemodal()" class="btn btn-danger align-self-end">X</button>
+      <input id="phonename" type="text" placeholder="Enter Phone Name" class="form-control">
+      <input id="phoneprice" type="number" placeholder="Enter Phone Price" class="form-control">
+      <button class="btn btn-success" onclick="add()">Save Phone</button>
+    </div>
+  </div>
+
+  <script src="./Adminboard.js"></script>
+</body>
+</html>
