@@ -116,6 +116,6 @@ let signin = () => {
     username.value=""
     userpassword.value = ""
   } else {
-    alert("username or password is invalid")
+    alert("username or password is wrong")
   }
 };
