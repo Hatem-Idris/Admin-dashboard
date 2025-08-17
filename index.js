@@ -112,7 +112,7 @@ let signin = () => {
   if (username.value === "" || userpassword.value === "") {
     alert("You can't leave empty values");
   } else if (username.value == user && userpassword.value == password) {
-    window.location.href = 'adminboard.html'
+    window.location.href = 'Adminboard.html'
     username.value=""
     userpassword.value = ""
   } else {
