@@ -73,6 +73,8 @@ let increase = (index) => {
 let decrease = (index) => {
   if (cart[index].qty > 1) {
     cart[index].qty--;
+  }else if (cart[index].qty = -1){
+    deleteItem();
   }
   showCart();
 };
